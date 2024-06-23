@@ -8,6 +8,8 @@
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
 
   <body>
@@ -20,6 +22,32 @@
         </ul>
       </nav>
     </header>
+
+    <div class="overlay" id="js-overlay"></div>
+    <div class="modal" id="js-modal">
+  
+      <div class="modal-close__wrap">
+        <button class="modal-close" id="js-close">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+  
+      <div class="original_modal">
+        <p class="title">おみくじアプリ</p>
+        <div class="box first">
+          <p class="box_title">おみくじアプリとは</p>
+          <p class="box_text">あなたの運勢をワンクリックで占えるアプリ</p>
+        </div>
+        <div class="box">
+          <p class="box_title">おみくじアプリの特徴</p>
+          <p class="box_text">ああああああああああああああああああああああああああああああああああああああああああああ</p>
+        </div>
+        <div class="box_icon">
+          <a href="https://github.com/miki-aliyas/Today-sFortuneApp"><img src="img/github_icon.png"></a>
+        </div>
+      </div>
+    </div>
 
     <main>
       <div id="mainvisual">
@@ -46,11 +74,10 @@
         <h2 class="section-title">Works</h2>
         <ul>
           <li>
-            <a href="https://github.com/miki-aliyas/Today-sFortuneApp">
+            <div id="js-open">
               <img src="img/omikuji-app.png" alt="占い画像">
-            </a>
+            </div>
             <h3 class="content-title">今日の運勢を占いアプリ</h3>
-            <p>あなたの運勢をワンクリックで占えるアプリ</p>
           </li>
           <!-- <li>
             <img src="img/bicycle2.jpg" alt="テキストテキストテキスト">
@@ -70,6 +97,7 @@
       <p>&copy; 2024 Profile</p>
     </footer>
 
+    <script src="./js/script.js"></script>
   </body>
 
 </html>
