@@ -11,8 +11,6 @@
     right: 0;
   }
   
-  
-  
   .modal {
     width: 65%;
     height: 80%;
@@ -65,7 +63,6 @@
     color: #fff;
     padding: 10px 12px;
   }
-  
   
   .overlay.open {
     display: block;
