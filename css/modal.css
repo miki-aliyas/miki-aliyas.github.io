@@ -11,7 +11,19 @@
     right: 0;
   }
   
-  .modal {
+  .omikuji-modal {
+    width: 65%;
+    height: 80%;
+    border: 1px solid #000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    display: none;
+  }
+
+  .stopwatch-modal {
     width: 65%;
     height: 80%;
     border: 1px solid #000;
@@ -56,7 +68,15 @@
     transform: rotate(-45deg);
   }
   
-  .modal-open {
+  .omikuji-modal-open {
+    cursor: pointer;
+    background: orange;
+    border: orange;
+    color: #fff;
+    padding: 10px 12px;
+  }
+
+  .stopwatch-modal-open {
     cursor: pointer;
     background: orange;
     border: orange;
@@ -68,7 +88,11 @@
     display: block;
   }
   
-  .modal.open {
+  .omikuji-modal.open {
+    display: block;
+  }
+
+  .stopwatch-modal.open {
     display: block;
   }
 /* ここから下はオリジナル */
