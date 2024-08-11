@@ -19,10 +19,10 @@
 <img src="https://miki-aliyas.github.io/img/works1.png">
 
 > 画像をクリックするとそれぞれモーダルウィンドウが開く
-> 「×」と背景のグレー部分をクリックした時のみ最初の画面に戻る
+>「×」と背景のグレー部分をクリックした時のみ最初の画面に戻る
 <img src="https://miki-aliyas.github.io/img/works1.png">
 
 > モーダルウィンドウ内のGithubのアイコンをクリックするとそれぞれのGithubへリンク
->  [今日の運勢を占うアプり](https://github.com/miki-aliyas/Today-sFortuneApp) 、[ストップウォッチアプリ](https://github.com/miki-aliyas/StopWatchAPP)
+> [今日の運勢を占うアプり](https://github.com/miki-aliyas/Today-sFortuneApp) 、[ストップウォッチアプリ](https://github.com/miki-aliyas/StopWatchAPP)
 <img src="https://miki-aliyas.github.io/img/works3.png">
 
