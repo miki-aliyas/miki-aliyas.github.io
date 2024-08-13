@@ -7,7 +7,7 @@
 
 **About, Works**
 > タップするとそれぞれの項目へリンク
-> > [About](https://miki-aliyas.github.io/#about) 、[Works](https://miki-aliyas.github.io/#works)
+> [About](https://miki-aliyas.github.io/#about) 、[Works](https://miki-aliyas.github.io/#works)
 <img src="https://miki-aliyas.github.io/img/portfolio1.png">
 
 **MainVisual**
