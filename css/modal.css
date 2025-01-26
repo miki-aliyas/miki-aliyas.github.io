@@ -34,6 +34,18 @@
     background: #fff;
     display: none;
   }
+
+  .wearch-modal {
+    width: 65%;
+    height: 80%;
+    border: 1px solid #000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    display: none;
+  }
   
   .modal-close__wrap {
     position: absolute;
@@ -78,12 +90,16 @@
 
   .stopwatch-modal-open {
     cursor: pointer;
-    background: blue;
-    border: blue;
     color: #fff;
     padding: 10px 12px;
   }
   
+  .wearch-modal-open {
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 12px;
+  }
+
   .overlay.open {
     display: block;
   }
@@ -95,6 +111,11 @@
   .stopwatch-modal.open {
     display: block;
   }
+
+  .wearch-modal.open {
+    display: block;
+  }
+
 /* ここから下はオリジナル */
   .original_modal{
     padding: 40px;
@@ -107,6 +128,13 @@
     padding-bottom: 5px;
     margin-bottom: 30px;
   }
+  .original_modal .title.stopwatch{
+    border-bottom: 2px solid blue;
+  }
+
+  .original_modal .title.wearch{
+    border-bottom: 2px solid #6C676E;
+  }
 
   .original_modal .box .box_title{
     font-size: 16px;
@@ -115,6 +143,14 @@
     display: inline-block;
     padding-bottom: 5px;
     margin-bottom: 10px;
+  }
+
+  .original_modal .box .box_title.stopwatch{
+    border-bottom: 2px solid blue;
+  }
+
+  .original_modal .box .box_title.wearch{
+    border-bottom: 2px solid #6C676E;
   }
 
   .original_modal .box.first{
