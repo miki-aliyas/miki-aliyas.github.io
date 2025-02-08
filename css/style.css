@@ -5,7 +5,7 @@ html {
   font-size: 100%;
 }
 body {
-  color: #383e45;
+  color: #6C676E;
   font-size: 0.9rem;
 }
 a {
@@ -17,25 +17,66 @@ img {
 li {
   list-style: none;
 }
+
+/* ローディング */
+.loading_bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 9999;
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
+  background-color: white;
+  transition: all 0.5s linear;
+}
+
+.loading_bg.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 120px;
+  height: 20px;
+  -webkit-mask:linear-gradient(90deg,#000 70%,#0000 0) 0/20%;
+  background:
+   linear-gradient(#000 0 0) 0/0% no-repeat
+   #ddd;
+  animation: l4 2s infinite steps(6);
+}
+@keyframes l4 {
+    100% {background-size:120%}
+}
+
 .site-title {
   width: 120px;
   line-height: 1px;
   padding: 10px 0;
 }
+
 .site-title a {
   display: block;
 }
+
 .section-title {
   display: inline-block;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 60px;
-  border-bottom: solid 1px #383e45;
+  border-bottom: solid 1px #6C676E;
 }
+
 .content-title {
   font-size: 1rem;
   margin: 10px 0;
 }
+
 .wrapper {
   max-width: 960px;
   margin: 0 auto 40px auto;
@@ -43,32 +84,34 @@ li {
   text-align: center;
 }
 
-
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
+
 #header ul {
   display: flex;
   padding: 10px 0;
 }
+
 #header li {
   margin-left: 30px;
 }
+
 #header li a {
-  color: #24292e;
+  color: #6C676E;
 }
+
 #header li a:hover {
   opacity: 0.7;
 }
 
-
-
 #mainvisual {
   margin-bottom: 80px;
 }
+
 #mainvisual img {
   width: 100%;
   max-width: 1920px;
@@ -76,19 +119,19 @@ li {
   object-fit: cover;
 }
 
-
 #about .content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #about img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin-right: 30px;  
-
 }
+
 #about .text {
   text-align: left;
 }
@@ -99,8 +142,16 @@ li {
   gap: 20px;
   padding-left: 0;
 }
+
 #works li {
   width: 32%;
+}
+
+/* 画像バナー */
+.c-bnr:hover {
+  display: inline-block;
+  overflow: hidden;
+  transform: scale(1.2);
 }
 
 #footer {

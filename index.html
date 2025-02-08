@@ -11,9 +11,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/modal.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js" defer></script>
   </head>
 
   <body>
+    <div class="loading_bg">
+      <div class="loader"></div>
+    </div>
     <header id="header" class="wrapper">
       <h1 class="site-title"><a href="index.html"><img src="img/logo.svg" alt="Profile"></a></h1>
       <nav>
@@ -24,9 +28,9 @@
       </nav>
     </header>
 
+        <!-- おみくじアプリ　モーダルウィンドウ -->
     <div class="overlay" id="js-overlay"></div>
     <div class="omikuji-modal" id="omikuji-modal">
-  
       <div class="modal-close__wrap">
         <button class="modal-close" id="omikuji-close">
           <span></span>
@@ -40,8 +44,22 @@
           <p class="box_text">あなたの今日の運勢をワンクリックで占える</p>
         </div>
         <div class="box">
+          <p class="box_title">制作期間</p>
+          <p class="box_text">2ヶ月</p>
+          <p class="box_title">使用Tool</p>
+          <p class="box_text">Android studio (Java)</p>
           <p class="box_title">おみくじアプリの特徴</p>
           <p class="box_text">おみくじ結果がLINEに届く</p>
+          <p class="box_title">デザイン</p>
+          <p class="box_text">Figmaを使用してデザイン決め</p>
+          <img src="img/omikuji-app.png" alt="">
+          <p class="box_title">操作方法</p>
+          <p class="box_text">1.「おみくじを引く」をタップ</p>
+          <img src="img/omikuji-app1.png" alt="">
+          <p class="box_text">2.結果が表示される。「トップページに戻る」をタップ</p>
+          <img src="img/omikuji-app2.png" alt="">
+          <p class="box_text">3.自身のスマートフォンのLINEにおみくじ結果が届く</p>
+          <img src="img/omikuji-app3.jpg" alt="">
         </div>
         <div class="box_icon">
           <a href="https://github.com/miki-aliyas/Today-sFortuneApp"><img src="img/github_icon.png"></a>
@@ -49,8 +67,8 @@
       </div>
     </div>
 
+    <!-- ストップウォッチアプリ　モーダルウィンドウ -->
     <div class="stopwatch-modal" id="stopwatch-modal">
-  
       <div class="modal-close__wrap">
         <button class="modal-close" id="stopwatch-close">
           <span></span>
@@ -64,8 +82,21 @@
           <p class="box_text">シンプルなデザイン</p>
         </div>
         <div class="box">
+          <p class="box_title stopwatch">制作期間</p>
+          <p class="box_text">2ヶ月</p>
+          <p class="box_title stopwatch">使用Tool</p>
+          <p class="box_text">Android studio (Java)</p>
           <p class="box_title stopwatch">ストップウォッチアプリの特徴</p>
           <p class="box_text">複雑な操作いらず</p>
+          <p class="box_title stopwatch">デザイン</p>
+          <p class="box_text">Figmaを使用してデザイン決め</p>
+          <img src="img/stopwatch-app.png" alt="">
+          <br>
+          <p class="box_title stopwatch">操作方法</p>
+          <p class="box_text">1.「PLAY」ボタンをタップする</p>
+          <img src="img/stopwatch-app1.png" alt="">
+          <p class="box_text">2.「STOP」のボタンのみが表示される</p>
+          <img src="img/stopwatch-app2.png" alt="">
         </div>
         <div class="box_icon">
           <a href="https://github.com/miki-aliyas/StopWatchAPP"><img src="img/github_icon.png"></a>
@@ -73,8 +104,8 @@
       </div>
     </div>
 
+        <!-- Wearchアプリ　モーダルウィンドウ -->
     <div class="wearch-modal" id="wearch-modal">
-  
       <div class="modal-close__wrap">
         <button class="modal-close" id="wearch-close">
           <span></span>
@@ -82,18 +113,22 @@
         </button>
       </div>
       <div class="original_modal">
-        <p class="title wearch">Wearch</p>
-        <div class="box first">
-          <p class="box_title wearch">Wearchアプリとは</p>
-          <p class="box_text">「Wear」と「Search」を組み合わせたECアプリ</p>
-        </div>
-        <div class="box">
-          <p class="box_title wearch">Wearchアプリの特徴</p>
-          <p class="box_text">モダンなデザイン</p>
-        </div>
-        <div class="box_icon">
-          <a href="https://github.com/miki-aliyas/WearchApp"><img src="img/github_icon.png"></a>
-        </div>
+          <p class="title wearch">Wearch</p>
+          <div class="box first">
+            <p class="box_title wearch">Wearchアプリとは</p>
+            <p class="box_text">「Wear」と「Search」を組み合わせたECアプリ</p>
+          </div>
+          <div class="box">
+            <p class="box_title wearch">Wearchアプリの特徴</p>
+            <p class="box_text">モダンなデザイン</p>
+            <p class="box_title wearch">制作期間</p>
+            <p class="box_text">5ヶ月</p>
+            <p class="box_title wearch">使用Tool</p>
+            <p class="box_text">Android studio (Java)</p>
+          </div>
+          <div class="box_icon">
+            <a href="https://github.com/miki-aliyas/WearchApp"><img src="img/github_icon.png"></a>
+          </div>  
       </div>
     </div>
 
@@ -121,21 +156,25 @@
       <section id="works" class="wrapper">
         <h2 class="section-title">Works</h2>
         <ul>
+
+              <!-- おみくじアプリ-->
           <li>
             <div id="omikuji-open">
-              <img src="img/omikuji-app.png" alt="">
+                <img class="c-bnr" src="img/omikuji-app.png" alt="">
             </div>
             <h3 class="content-title">今日の運勢を占うアプリ</h3>
           </li>
           <li>
+            <!-- ストップウォッチアプリ-->
             <div id="stopwatch-open">
-              <img src="img/stopwatch-app.png" alt="">
+              <img class="c-bnr" src="img/stopwatch-app.png" alt="">
             </div>
             <h3 class="content-title">ストップウォッチアプリ</h3>
           </li>
           <li>
+            <!-- Wearchアプリ-->
             <div id="wearch-open">
-              <img src="img/wearch-app.png" alt="">
+              <img class="c-bnr" src="img/wearch-app.png" alt="">
             </div>
             <h3 class="content-title">Wearch</h3>
           </li>
@@ -147,7 +186,7 @@
       <p>&copy; 2025 Profile</p>
     </footer>
 
-    <script src="./js/script.js"></script>
+  
   </body>
 
 </html>
