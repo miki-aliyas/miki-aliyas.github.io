@@ -106,14 +106,17 @@
   
   .omikuji-modal.open {
     display: block;
+    z-index: 999999;
   }
 
   .stopwatch-modal.open {
     display: block;
+    z-index: 999999;
   }
 
   .wearch-modal.open {
     display: block;
+    z-index: 999999;
   }
 
 /* ここから下はオリジナル */
