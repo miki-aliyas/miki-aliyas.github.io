@@ -154,9 +154,20 @@ li {
 }
 
 #footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 0.5rem;
   padding: 10px 0;
-  text-align: center;
+}
+
+footer .img_box {
+  width: 10px;
+  margin-right: 3px;
+}
+
+footer .text_link a {
+  color: #262626;
 }
 
 
